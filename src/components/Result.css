@@ -1,0 +1,10 @@
+.result-div {
+    display: grid;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.result-div:hover {
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19), 4px 4px 5px 5px rgba(0, 0, 0, 0.521);
+}
