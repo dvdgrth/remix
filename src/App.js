@@ -11,8 +11,7 @@ import getDATA from './data/api_simulator'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
