@@ -1,8 +1,8 @@
 let DATA = [
     {
         id: 0,
-        title: "Best music on the net",
-        summary: "Presenting my favorite finds of music sites and artists.",
+        title: "Favorite music",
+        summary: "Some nice finds of music sites and artists. You may find something you like too.",
         links: [
             "https://mynoise.net/noiseMachines.php",
             "https://www.kcrw.com/music/shows/eclectic24",
@@ -13,7 +13,7 @@ let DATA = [
     {
         id: 1,
         title: "React ressources",
-        summary: "Hopefully, some helpful links on React",
+        summary: "Some helpful links on React, hopefully.",
         links: [
             "https://reactjs.org/",
             "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks",
@@ -24,8 +24,8 @@ let DATA = [
     },
     {
         id: 2,
-        title: "title 3",
-        summary: "summary 3",
+        title: "Ressources on startups",
+        summary: "Best finds on Elon, Naval, Thiel. Mostly Videos.",
         links: [
             "/home",
             "/home",
@@ -37,8 +37,8 @@ let DATA = [
     },
     {
         id: 3,
-        title: "title 4",
-        summary: "summary 4",
+        title: "Vegan recipes without tofu.",
+        summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         links: [
             "/home",
             "/home",
@@ -50,8 +50,8 @@ let DATA = [
     },
     {
         id: 4,
-        title: "title 5",
-        summary: "summary 5",
+        title: "Technology podcasts",
+        summary: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         links: [
             "/home",
             "/home",

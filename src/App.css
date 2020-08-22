@@ -7,3 +7,15 @@
 .title {
   text-align: center;
 }
+
+.todo-div {
+  color: tomato;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: -1;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+}

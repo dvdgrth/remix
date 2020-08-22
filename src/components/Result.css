@@ -11,6 +11,7 @@
     align-items: center;
     gap: 5px;
     box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(224, 228, 0, 0.534);
 }
 
 .result-div:hover {

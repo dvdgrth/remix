@@ -30,6 +30,7 @@ function App(props) {
 
   return ( 
       <Router>
+
       <div>
 
         {/* A <Switch> looks through its children <Route>s and
@@ -47,6 +48,28 @@ function App(props) {
           </Route>
 
         </Switch>
+      </div>
+      
+      <div className="todo-div">
+        TODOs:
+        <br/>
+        Form validation
+        <br/>
+        Searching
+        <br/>
+        Sorting
+        <br/>
+        Rating 
+        <br/>
+        Responsive Design
+        <br/>
+        Better Design
+        <br/>
+        More initial data
+        <br/>
+        review Routing
+        <br/>
+        shield Css
       </div>
     </Router>
   );

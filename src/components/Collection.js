@@ -8,7 +8,7 @@ function Collection(props) {
 
     let links = [];
     for (let i = 0; i < collection.links.length; i++) {
-        links.push(<a href={collection.links[i]} key={i} className="collection-link" target="_blank" rel="noopener noreferrer">{collection.links[i]}</a>);
+        links.push(<a href={collection.links[i]} key={i} className="collection-link" target="_blank" rel="noopener noreferrer">{collection.links[i]} 🡕</a>);
         
     }
 

@@ -12,6 +12,8 @@
     max-width: 800px;
     margin: 100px auto;
     margin-top: 100px;
+    /* background-color: rgb(230, 230, 230); */
+    background-color: rgba(224, 228, 0, 0.575);
 }
 
 .freeze-div{
@@ -25,8 +27,9 @@
     text-align: center;
 }
 
-input, button {
+input, button, select {
     padding: 10px;
+    background-color: rgba(236, 234, 208, 0.897);
 }
 
 button, input {
