@@ -16,15 +16,15 @@ export class Result extends Component {
     render() {
         return (   
             <div className="result-div" onClick={() => this.clicked()}>
-                <Link to={{
-                    pathname: "/collection",
+                <Link className="result-link" to={{
+                    pathname: `/collection/${this.props.collection.title.replace(/ /g, "_")}`,
                     query: {id: this.props.collection.id},
                     state:{id: this.props.collection.id}
                 }}
                 >
                     <h2>{this.props.collection.title}</h2>
                     <p>{this.props.collection.summary}</p>
-                    <Rating />
+                    <Rating rating={this.props.collection.rating}/>
                 </Link> 
             </div>                               
 

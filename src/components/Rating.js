@@ -1,9 +1,14 @@
 import React from 'react';
 
 function Rating(props) {
+    function stars(x) {
+        return "★ ".repeat(x);
+    }
+
+
     return (
         <div>
-                &#9733; &#9733; &#9733; &#9733; &#9733;
+            {stars(props.rating)}           
         </div>
     )
 }

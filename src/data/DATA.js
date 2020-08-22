@@ -27,11 +27,11 @@ let DATA = [
         title: "title 3",
         summary: "summary 3",
         links: [
-            "link 1",
-            "link 2",
-            "link 3",
-            "link 4",
-            "link 5"
+            "/home",
+            "/home",
+            "/home",
+            "/home",
+            "/home"
         ],
         rating: 5
     },
@@ -40,11 +40,11 @@ let DATA = [
         title: "title 4",
         summary: "summary 4",
         links: [
-            "link 1",
-            "link 2",
-            "link 3",
-            "link 4",
-            "link 5"
+            "/home",
+            "/home",
+            "/home",
+            "/home",
+            "/home"
         ],
         rating: 5
     },
@@ -53,63 +53,11 @@ let DATA = [
         title: "title 5",
         summary: "summary 5",
         links: [
-            "link 1",
-            "link 2",
-            "link 3",
-            "link 4",
-            "link 5"
-        ],
-        rating: 5
-    },
-    {
-        id: 5,
-        title: "title 6",
-        summary: "summary 6",
-        links: [
-            "link 1",
-            "link 2",
-            "link 3",
-            "link 4",
-            "link 5"
-        ],
-        rating: 5
-    },
-    {
-        id: 6,
-        title: "title 7",
-        summary: "summary 7",
-        links: [
-            "link 1",
-            "link 2",
-            "link 3",
-            "link 4",
-            "link 5"
-        ],
-        rating: 5
-    },
-    {
-        id: 7,
-        title: "title 8",
-        summary: "summary 8",
-        links: [
-            "link 1",
-            "link 2",
-            "link 3",
-            "link 4",
-            "link 5"
-        ],
-        rating: 5
-    },
-    {
-        id: 8,
-        title: "title 9",
-        summary: "summary 9",
-        links: [
-            "link 1",
-            "link 2",
-            "link 3",
-            "link 4",
-            "link 5"
+            "/home",
+            "/home",
+            "/home",
+            "/home",
+            "/home"
         ],
         rating: 5
     }

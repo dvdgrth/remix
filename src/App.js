@@ -4,9 +4,10 @@ import SearchBar from './components/SearchBar';
 import Results from './components/Results';
 import AddButton from './components/AddButton';
 import SortButton from './components/SortButton';
-import Popup from './components/Popup'
+import Popup from './components/Popup';
+import Collection from './components/Collection';
 
-import getDATA from './data/api_simulator'
+
 
 import {
   BrowserRouter as Router,
@@ -16,6 +17,17 @@ import {
 
 
 function App(props) {
+  const [collections, setCollections] = useState(props.collections);
+  
+  function addCollection(newCollection) {
+    setCollections([...collections, newCollection]);
+  }
+
+  function getDATA(id) {
+    // console.log(`inside api. seraching for ${id}`);
+    return collections.filter((collection) => collection.id === id)[0];
+  }
+
   return ( 
       <Router>
       <div>
@@ -29,9 +41,9 @@ function App(props) {
           <Route path="/users">
             <Users />
           </Route>
-          <Route path="/collection" render={(props) => (<Collection {...props} isAuthed={true} />)} />
+          <Route path="/collection/:id" render={(props) => (<Collection {...props} getDATA={getDATA} />)} />
           <Route path="/">
-            <Home collections={props.collections}/>
+            <Home collections={collections} addCollection={addCollection}/>
           </Route>
 
         </Switch>
@@ -46,13 +58,7 @@ export default App;
 
 
 function Home(props) {
-  const [collections, setCollections] = useState(props.collections);
   const [showPopup, setShowPopup] = useState(false);
-  
-  
-  function addCollection(newCollection) {
-    setCollections([...collections, newCollection]);
-  }
 
   return (
     <div className="App">
@@ -62,8 +68,8 @@ function Home(props) {
         <AddButton setShowPopup={setShowPopup}/>
       </div>
       <SortButton />
-      <Results collections={collections}/>
-      <Popup addCollection={addCollection} showPopup={showPopup} setShowPopup={setShowPopup}/>
+      <Results collections={props.collections}/>
+      <Popup addCollection={props.addCollection} showPopup={showPopup} setShowPopup={setShowPopup}/>
     </div>)
 }
 
@@ -76,13 +82,3 @@ function Users() {
 }
 
 
-function Collection(props) {
-  const collection = getDATA(props.location.state.id);
-  return (
-    <div>
-      <h2>{collection.title}</h2>
-      <p>{collection.summary}</p>
-      {collection.links.map(l => (<a href={l}>{l}</a>))}
-    </div>
-  );
-}

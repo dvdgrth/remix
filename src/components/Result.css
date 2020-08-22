@@ -1,3 +1,11 @@
+.result-link {
+    color: black;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
 .result-div {
     display: grid;
     align-items: center;
@@ -8,3 +16,4 @@
 .result-div:hover {
     box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19), 4px 4px 5px 5px rgba(0, 0, 0, 0.521);
 }
+
