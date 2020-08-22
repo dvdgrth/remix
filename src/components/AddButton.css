@@ -1,16 +1,25 @@
 .add-button {
-  border-radius: 5%;
-  padding: 10px 25px;
+  border-radius: 3%;
+  /* height: 100%;
+  padding: auto auto; */
+  /* padding: 3px 15px; */
   /* background-color: rgb(255, 99, 42); */
   /* color: white; */
+  border: 1px solid rgb(94, 94, 94);
+  box-sizing: border-box;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 .add-button:hover {
-    box-shadow: 0px 0px 10px 1px #aaaaaa;
+    box-shadow: 2px 2px 5px 2px #aaaaaa;
 }
 
 .add-div {
     /* background-color: rgba(9, 255, 0, 0.555); */
     grid-area: add;
     text-align: center;
+    display: table;
+    height: 100%;
 }

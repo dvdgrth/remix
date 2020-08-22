@@ -1,14 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
+
 import "./AddButton.css";
 
-export class AddButton extends Component {
-    render() {
-        return (
-            <div className="add-div">
-                <button className="add-button">Add a Collection</button>
-            </div>
-        )
+function AddButton(props) {
+    function addClicked() {
+        props.setShowPopup(true);
     }
+
+    return (
+        <div className="add-div">
+            <div className="add-button" onClick={addClicked}>Add a Collection</div>
+        </div>
+    )
 }
 
 export default AddButton

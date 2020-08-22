@@ -1,0 +1,19 @@
+.popup-div {
+    position: fixed;
+    top: 200px;
+    left: 400px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 500px;
+    box-shadow: 4px 4px 3px 0 rgba(0, 0, 0, 0.2), 4px 4px 20px 0 rgba(0, 0, 0, 0.19), 4px 4px 5px 5px rgba(0, 0, 0, 0.521);
+}
+
+.freeze-div{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.753);
+    height: 100%;
+    width: 100%;
+    padding: 1px;
+}

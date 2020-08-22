@@ -4,7 +4,7 @@ import Result from './Result'
 
 export class Results extends Component {
     render() {
-        let results = this.props.collections.map(c => <Result key={c.id} title={c.title} summary={c.summary}/>);
+        let results = this.props.collections.map(c => <Result collection={c} key={c.id}/>);
 
         return (
             <div className="results-div">
